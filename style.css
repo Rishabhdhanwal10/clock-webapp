@@ -1,0 +1,259 @@
+body{
+    margin: 0px;
+    pad: 0px;
+}
+
+@font-face {
+    font-family: bauhaus;
+    src: url("./fonts/bauhaus\ heavy\ bt.ttf");
+}
+.main_container{
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    background-color: #3D087B;
+}
+.header{
+    width: 75%;
+    height: 200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header>div{
+    width: 48%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+.clock-bg-1{
+    width: 80%;
+    background-color: lightgray;
+    height: 100px;
+    position: absolute;
+    right: 12%;
+    bottom: 8%;
+    border-radius: 12px;
+    z-index: 2;
+}
+.clock-bg-2{
+    width: 70%;
+    background-color: lightgray;
+    height: 100px;
+    position: absolute;
+    right: 16%;
+    bottom: 2%;
+    border-radius: 12px;
+    z-index: 1;
+    opacity: .4;
+}
+.clock{
+    width: 200px;
+    position: absolute;
+    bottom: 20%;
+    left: 4%;
+}
+.time{
+    width: 515px;
+    height: 130px;
+    background-color: white;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 15%; 
+    right: 5%;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    z-index: 3;
+}
+.time>div{
+    width: 80px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first{
+    font-size: 20px;
+    color: #3D087B; 
+    font-weight: bold;
+    font-family: 'Manrope', sans-serif;
+}
+.second{
+    background-image: url('./images/timeline.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 22px;
+    color: #8A11BF;
+    font-family: 'Barlow', sans-serif;
+    line-height: 32px;
+}
+
+.third{
+    background-image: url('./images/AM.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    border-radius: 6px;
+}
+.second>p>span{
+    font-size: 32px;
+}
+
+.container-2{
+    width: 75%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+.left{
+    width: 49%;
+    /* height: 500px; */
+}
+.right{
+    width: 49%;
+    height: 500px; 
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+}
+.right>p{
+    font-family: bauhaus;
+    font-size: 28px;
+    color: #8E53F0;
+    font-weight: bold;
+    margin: 0px;
+    position: absolute;
+    left: 8%;
+    top: 8%;
+}
+.box-1{
+    width: 100%;
+    height: 275px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-1>div{
+    width: 90%;
+    height: 80%;
+    /* background-color: brown; */
+    display: flex;
+}
+.text{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    /* background-color: navajowhite; */
+}
+.text>div{
+    width: 100%;
+    height: 20%;
+}
+.a{
+    position: relative;
+}
+.a>img{
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+}
+.a>p{
+    position: absolute;
+    margin: 0px;
+    bottom: 10%;
+    color: #3D087B;
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+}
+.b{
+    position: relative;
+}
+.b>p{
+    height: 32px;
+    width: 1px;
+    background-color: #EDEDED;
+    position: absolute;
+    left: 12%;
+    bottom: 0%;
+    margin: 0px;
+}
+.input-time{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    /* background-color: orangered; */
+}
+.box-2{
+    width: 100%;
+    /* height: 70px; */
+    /* background-color: #EDEDED; */
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 18px;
+    /* display: flex;
+    align-items: center; */
+}
+.box-2>p{
+    /* font-family: Bauhaus;
+    font-size: 22px; */
+    padding: 10px 5px;
+    color: #3D087B;
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+    /* color: #8E53F0; */
+    margin: 0px;
+    margin-left: 32px;
+}
+.box-3{
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    background: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+    border-radius: 4px;
+    margin-top: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-3:hover{
+    background: linear-gradient(to left,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+}
+.box-3>p{
+    font-size: 24px;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+}
+.img{
+    width: 90%;
+    height: 400px;
+    text-align: end;
+    background-image: url('./images/web-timetable.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: .5%;
+    right: 2%;
+}
+
+.input-time>select{
+    width: 100%;
+    padding: 12px 4px 12px 12px;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    position: absolute;
+    color: #3D087BDE;
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+}
